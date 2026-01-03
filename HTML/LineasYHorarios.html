@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Líneas y Horarios - TransitFlow</title>
+</head>
+<body>
+
+<!-- Encabezado -->
+<header>
+    <nav>
+        <h1>TransitFlow</h1>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Líneas y Horarios</a></li>
+            <li><a href="#">Mis Rutas</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Contenido principal -->
+<main>
+    <h2>Líneas y horarios</h2>
+
+    <section>
+        <!-- Buscador -->
+        <div>
+            <h3>Buscador</h3>
+            <form>
+                <label for="origen">Origen</label>
+                <input type="text" id="origen" name="origen" placeholder="Introduce origen">
+
+                <label for="destino">Destino</label>
+                <input type="text" id="destino" name="destino" placeholder="Introduce destino">
+
+                <label for="fecha">Fecha</label>
+                <input type="text" id="fecha" name="fecha" placeholder="dd/mm/aaaa">
+
+                <label for="hora">Hora</label>
+                <input type="text" id="hora" name="hora" placeholder="--:--">
+
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+
+        <!-- Redes de bus -->
+        <div>
+            <h3>Redes</h3>
+            <input type="text" placeholder="Buscar por localidad...">
+
+            <!-- Esto ha de ser un menú desplegable-->
+            <ul>
+                <li>100 - Palma</li>
+                <li>200 - Manacor</li>
+                <li>300 - Inca</li>
+                <li>500 - Sud-Oest</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>Esto es el footer</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<!-- Menú de navegación !-->
+<header>
+  <nav>
+    <div id="logo">
+      <h1>TransitFlow</h1>
+    </div>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Líneas y Horarios</a></li>
+      <li><a href="#">Mis rutas</a></li>
+      <li><a href="#">Sobre nosotros</a></li>
+      <li><a href="#">Ayuda</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Contenido principal !-->
+<main>
+
+  <!-- Formulario !-->
+  <section>
+    <h2>Book Your Journey</h2>
+    <form>
+      <label for="origen">Origen</label>
+      <select id="origen" name="origen">
+        <option value="">Selecciona ciudad de origen</option>
+        <option value="ciudad1">Ciudad 1</option>
+        <option value="ciudad2">Ciudad 2</option>
+      </select>
+
+      <label for="destino">Destino</label>
+      <select id="destino" name="destino">
+        <option value="">Selecciona ciudad de destino</option>
+        <option value="ciudadA">Ciudad A</option>
+        <option value="ciudadB">Ciudad B</option>
+      </select>
+
+      <label for="fecha">Fecha</label>
+      <input id="fecha" type="date" name="fecha">
+
+      <label for="pasajeros">Pasajeros</label>
+      <input id="pasajeros" type="number" name="pasajeros" min="1" value="1">
+
+      <button type="submit">Buscar</button>
+    </form>
+  </section>
+
+  <!-- Notificaciones -->
+  <section>
+    <h2>Notificaciones</h2>
+    <ul>
+      <li>
+        <h3>Ruta 100 (Expresa del Centro)</h3>
+        <p>Se espera un retraso de 25 minutos debido al tráfico en Main Street.</p>
+        <small>Hace 5 min</small>
+      </li>
+      <li>
+        <h3>Route 300 (Caja Gran)</h3>
+        <p>Horario ajustado debido a evento especial. Consulte los horarios actualizados.</p>
+        <small>Hace 1 hora</small>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Rutas cercanas y rutas disponibles -->
+  <section>
+    <h2>Rutas Cercanas</h2>
+    <div>
+      <!-- Mapa (aqui no he puesto nada todavía) -->
+      <div class="mapa">
+        <img src="" alt="Mapa de rutas cercanas">
+      </div>
+
+      <aside>
+        <h2>Rutas Disponibles</h2>
+        <ul>
+          <li>
+            <button type="button">Ruta 101 - Felabrix (7 min)</button>
+          </li>
+          <li>
+            <button type="button">Ruta 500 - Palma (10 min)</button>
+          </li>
+          <li>
+            <button type="button">Ruta 400 - Maracor (25 min)</button>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>Esto es el footer</p>
+</footer>
+
+</body>
+</html>

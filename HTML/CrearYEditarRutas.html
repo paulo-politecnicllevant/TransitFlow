@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear/Editar rutas</title>
+</head>
+<body>
+
+<!-- Encabezado -->
+<header>
+    <nav>
+        <h1>TransitFlow</h1>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="LineasYHorarios.html">Líneas y Horarios</a></li>
+            <li><a href="RutasPersonalizadas.html">Mis rutas</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Contenido principal -->
+<main>
+    <h2>Creador de rutas</h2>
+
+    <section>
+        <!-- Formulario para crear o editar una ruta -->
+        <div>
+            <h3>Detalles de la ruta</h3>
+            <form>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Gimnasio">
+
+                <label for="origen">Origen:</label>
+                <input type="text" id="origen" name="origen" placeholder="Palma">
+
+                <label for="destino">Destino:</label>
+                <input type="text" id="destino" name="destino" placeholder="Manacor">
+
+                <p><b>Días de la semana</b></p>
+                <label>
+                    <input type="checkbox" name="dias" value="lunes" checked> Lunes</label>
+                <label>
+                    <input type="checkbox" name="dias" value="martes" checked> Martes</label>
+                <label>
+                    <input type="checkbox" name="dias" value="miercoles" checked> Miércoles</label>
+                <label>
+                    <input type="checkbox" name="dias" value="jueves"> Jueves</label>
+                <label>
+                    <input type="checkbox" name="dias" value="viernes"> Viernes</label>
+                <label>
+                    <input type="checkbox" name="dias" value="sabado"> Sábado</label>
+                <label>
+                    <input type="checkbox" name="dias" value="domingo"> Domingo</label>
+
+                <label for="salida">Hora de salida:</label>
+                <input type="time" id="salida" name="salida" value="17:41">
+
+                <label for="llegada">Hora de llegada:</label>
+                <input type="time" id="llegada" name="llegada">
+
+                <div>
+                    <button type="button">Buscar rutas</button>
+                    <button type="submit">Guardar en Mis Rutas</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div>
+            <!-- Aquí ha de estar el recorrido que ha de seguir la ruta-->
+        </div>
+
+        <!-- Aquí ha de estar el mapa con la ruta que se ha de seguir-->
+        <img src="#" alt="Mapa">
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>Esto es el footer</p>
+</footer>
+
+</body>
+</html>

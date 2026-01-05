@@ -1,0 +1,9 @@
+@use "variables";
+
+@mixin footer-base {
+  background-color: variables.$footer-bg;
+  color: variables.$footer-text;
+  padding: variables.$footer-padding-y variables.$footer-padding-x;
+  text-align: center;
+  font-size: variables.$footer-font-size;
+}

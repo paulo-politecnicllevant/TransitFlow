@@ -1,0 +1,5 @@
+@use "mixins";
+
+.footer {
+  @include mixins.footer-base;
+}

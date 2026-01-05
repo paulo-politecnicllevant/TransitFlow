@@ -1,0 +1,9 @@
+services:
+  sass:
+    build: .
+    container_name: TransitFlow
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: sass --watch --poll scss/main.scss:css/main.css --style=expanded
+    restart: unless-stopped

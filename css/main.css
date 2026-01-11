@@ -6,4 +6,16 @@
   font-size: 0.875rem;
 }
 
+.button {
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+}
+.button:hover {
+  background-color: #1e40af;
+}
+
 /*# sourceMappingURL=main.css.map */

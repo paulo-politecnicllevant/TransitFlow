@@ -1,9 +1,22 @@
 @use "variables";
 
-@mixin footer-base {
+@mixin footer {
   background-color: variables.$footer-bg;
   color: variables.$footer-text;
   padding: variables.$footer-padding-y variables.$footer-padding-x;
   text-align: center;
   font-size: variables.$footer-font-size;
+}
+
+@mixin button {
+  background-color: variables.$color-button-bg;
+  color: variables.$color-button-text;
+  padding: variables.$btn-padding-y variables.$btn-padding-x;
+  border-radius: variables.$radius-md;
+  font-weight: variables.$btn-font-weight;
+  border: none;
+
+  &:hover {
+    background-color: variables.$color-button-bg-hover;
+  }
 }

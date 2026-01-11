@@ -1,5 +1,12 @@
+@use "variables";
 @use "mixins";
 
+//Footer
 .footer {
-  @include mixins.footer-base;
+  @include mixins.footer;
+}
+
+//Botón
+.button {
+  @include mixins.button;
 }
